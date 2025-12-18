@@ -30,7 +30,7 @@ DB_PASSWORD=
 
 ⸻
 
-Step 2: Run Migrations and Seeders
+###Step 2: Run Migrations and Seeders
 
 php artisan migrate
 php artisan db:seed
@@ -38,7 +38,7 @@ php artisan db:seed
 
 ⸻
 
-Step 3: Start the Development Server
+###Step 3: Start the Development Server
 
 php artisan serve
 
@@ -49,7 +49,7 @@ http://localhost:8000
 
 ⸻
 
-Project Structure
+##Project Structure
 
 myapp/
 ├── app/
@@ -68,15 +68,15 @@ myapp/
 
 ⸻
 
-Features Implemented
+##Features Implemented
 
-CRUD Operations
+###CRUD Operations
 	•	Create: Add new products
 	•	Read: Display all products and view product details
 	•	Update: Edit existing products
 	•	Delete: Remove products
 
-Database Operations
+###Database Operations
 	•	Product model with mass assignment protection
 	•	Migration for products table
 	•	Seeder with 5 sample products
@@ -84,9 +84,9 @@ Database Operations
 
 ⸻
 
-Database Schema
+##Database Schema
 
-Table: products
+**Table: products
 
 Column	Type	Description
 id	bigint unsigned	Primary key
@@ -98,7 +98,7 @@ updated_at	timestamp	Last update time
 
 ⸻
 
-Sample Products
+##Sample Products
 
 #	Product Name	Price
 1	Sunglasses	99.99
@@ -110,7 +110,7 @@ Sample Products
 
 ⸻
 
-Testing with Tinker
+##Testing with Tinker
 
 php artisan tinker
 
