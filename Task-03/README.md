@@ -47,7 +47,7 @@ Visit: http://localhost:8000
 
 ---
 
-##📁 Project Structure
+## 📁 Project Structure
 
 
 myapp/
@@ -85,7 +85,7 @@ Database Operations
 
 ---
 
-##🗄 Database Schema
+## 🗄 Database Schema
 
 Table: products
 
@@ -98,7 +98,7 @@ updated_at timestamp Last update time
 
 ---
 
-##📊 Sample Products
+## 📊 Sample Products
 
 # Product Name Price
 1 Sunglasses 99.99
