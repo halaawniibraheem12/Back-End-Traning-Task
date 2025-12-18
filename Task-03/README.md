@@ -14,7 +14,7 @@ This project is a Laravel web application that demonstrates basic database opera
 
 ## 🚀 Installation & Setup
 
-### *Step 1: Database Configuration*
+### **Step 1: Database Configuration*
 Edit the .env file:
 
 env
@@ -28,7 +28,7 @@ DB_PASSWORD=
 
 ---
 
-Step 2: Run Migrations and Seeders
+### **Step 2: Run Migrations and Seeders
 
 bash
 php artisan migrate
@@ -37,7 +37,7 @@ php artisan db:seed
 
 ---
 
-Step 3: Start the Development Server
+### **Step 3: Start the Development Server
 
 bash
 php artisan serve
@@ -47,7 +47,7 @@ Visit: http://localhost:8000
 
 ---
 
-📁 Project Structure
+##📁 Project Structure
 
 
 myapp/
@@ -67,7 +67,7 @@ myapp/
 
 ---
 
-✨ Features Implemented
+### **✨ Features Implemented
 
 CRUD Operations
 
@@ -85,7 +85,7 @@ Database Operations
 
 ---
 
-🗄 Database Schema
+##🗄 Database Schema
 
 Table: products
 
@@ -98,7 +98,7 @@ updated_at timestamp Last update time
 
 ---
 
-📊 Sample Products
+##📊 Sample Products
 
 # Product Name Price
 1 Sunglasses 99.99
