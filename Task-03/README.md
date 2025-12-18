@@ -125,20 +125,3 @@ php artisan cache:clear
 php artisan config:clear
 php artisan route:clear
 
-
----
-
-## References
-- Laravel Migrations Documentation  
-  https://laravel.com/docs/migrations
-
-- Laravel Database Seeding Documentation  
-  https://laravel.com/docs/seeding
-
-- Laravel Controllers Documentation  
-  https://laravel.com/docs/controllers
-
----
-
-## Author
-University assignment demonstrating Laravel basic database operations and CRUD functionality.
