@@ -1,111 +1,140 @@
-```
-# Laravel CRUD Application - Task 3
+Laravel CRUD Application – Task 3
 
-Project Description:
-This project is a web application built with Laravel to manage products.
-It implements full CRUD operations (Create, Read, Update, Delete) with simple and user-friendly interfaces.
+📌 Project Description
 
----
+This project is a Laravel web application designed to demonstrate basic CRUD operations (Create, Read, Update, Delete) for managing products.
+The application includes database setup, models, migrations, seeders, controllers, routes, and user-friendly views.
 
-Requirements:
-- PHP >= 8.0
-- Composer
-- Laravel >= 10.x
-- MySQL
-- XAMPP (Apache + MySQL)
+⸻
 
----
+⚙️ Requirements
+	•	PHP >= 8.0
+	•	Composer
+	•	Laravel >= 10.x
+	•	MySQL
+	•	XAMPP (Apache & MySQL)
 
-Environment Setup:
-1. Start XAMPP and run Apache and MySQL.
-2. Open CMD inside the project folder:
-   cd C:\xampp\htdocs\myapp
-3. Verify Laravel is ready:
-   php artisan --version
+⸻
 
----
+🛠 Environment Setup
+	1.	Start XAMPP and run Apache and MySQL.
+	2.	Open CMD inside the project directory:
 
-Database Setup:
-1. Create the database:
-   mysql -u root
-   CREATE DATABASE task3_db;
-   EXIT;
-2. Update `.env` file:
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=task3_db
-   DB_USERNAME=root
-   DB_PASSWORD=
+cd C:\xampp\htdocs\myapp
 
----
+	3.	Verify Laravel installation:
 
-Creating Model, Migration, and Seeder:
-1. Create Model with Migration:
-   php artisan make:model Product -m
-2. Edit the Migration file (database/migrations/xxxx_create_products_table.php):
-   $table->decimal('price', 8, 2);
-3. Run Migration:
-   php artisan migrate
-4. Create Seeder:
-   php artisan make:seeder ProductSeeder
-5. Edit Seeder to add products:
-   Product::create(['name' => 'Sunglasses', 'price' => 99.99]);
-   Product::create(['name' => 'Tote Bag', 'price' => 59.99]);
-   // Add more products as needed
-6. Run Seeder:
-   php artisan db:seed --class=ProductSeeder
+php artisan --version
 
----
 
-Implementing CRUD Operations:
-1. Create Controller:
-   php artisan make:controller ProductController --resource
-2. Edit ProductController.php to add CRUD methods:
-   - index() - Display all products
-   - create() - Show create form
-   - store() - Save new product
-   - show() - Show single product
-   - edit() - Show edit form
-   - update() - Update product
-   - destroy() - Delete product
-3. Add Routes in routes/web.php:
-   Route::resource('products', ProductController::class);
+⸻
 
----
+🗄 Database Setup
+	1.	Create the database:
 
-Creating Views:
-1. Create folder for product views:
-   mkdir resources\views\products
-2. Create the following files:
-   - index.blade.php : Display all products with View, Edit, Delete buttons and Add New Product button
-   - create.blade.php : Form to add a new product
-   - edit.blade.php : Form to edit existing product
-   - show.blade.php : Display details of a single product
+mysql -u root
+CREATE DATABASE task3_db;
+EXIT;
 
----
+	2.	Update the .env file:
 
-Running the Project:
-1. Start the Laravel server:
-   php artisan serve
-2. Open in browser:
-   http://127.0.0.1:8000/products
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=task3_db
+DB_USERNAME=root
+DB_PASSWORD=
 
----
 
-Testing CRUD Operations:
-- Create: Add new products ✅
-- Read: Display all products ✅
-- Update: Edit product information ✅
-- Delete: Remove a product ✅
-Check database entries:
-   php artisan tinker
-   Product::all()
+⸻
 
----
+🔧 Model, Migration & Seeder
+	1.	Create Product model with migration:
 
-Notes:
-- All operations have been successfully tested.
-- Seeder can be modified to add more sample products.
-- Views are simple and can be improved using Bootstrap or Tailwind CSS.
-```
+php artisan make:model Product -m
+
+	2.	Edit migration file:
+
+$table->decimal('price', 8, 2);
+
+	3.	Run migration:
+
+php artisan migrate
+
+	4.	Create seeder:
+
+php artisan make:seeder ProductSeeder
+
+	5.	Add sample data:
+
+Product::create(['name' => 'Sunglasses', 'price' => 99.99]);
+Product::create(['name' => 'Tote Bag', 'price' => 59.99]);
+
+	6.	Run seeder:
+
+php artisan db:seed --class=ProductSeeder
+
+
+⸻
+
+🎯 CRUD Operations
+	1.	Create resource controller:
+
+php artisan make:controller ProductController --resource
+
+	2.	Implement methods:
+
+	•	index() – List all products
+	•	create() – Show create form
+	•	store() – Save new product
+	•	show() – Display product details
+	•	edit() – Show edit form
+	•	update() – Update product
+	•	destroy() – Delete product
+
+	3.	Define routes:
+
+Route::resource('products', ProductController::class);
+
+
+⸻
+
+🎨 Views
+
+Create the following files inside resources/views/products:
+	•	index.blade.php – List products
+	•	create.blade.php – Add new product
+	•	edit.blade.php – Edit product
+	•	show.blade.php – View product details
+
+⸻
+
+🚀 Running the Project
+
+php artisan serve
+
+Open in browser:
+
+http://127.0.0.1:8000/products
+
+
+⸻
+
+✅ Testing
+	•	Create product ✔
+	•	Read products ✔
+	•	Update product ✔
+	•	Delete product ✔
+
+Verify data:
+
+php artisan tinker
+Product::all()
+
+
+⸻
+
+📝 Notes
+	•	All CRUD operations were tested successfully.
+	•	Seeder can be extended with more sample data.
+	•	UI can be enhanced using Bootstrap or Tailwind CSS.
