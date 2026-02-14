@@ -98,7 +98,6 @@ Trash Page
 ✔ Authorization prevents cross-user trash actions\
 ✔ Seeders provide demo data\
 ✔ Feature tests confirm trash/restore flows\
-✔ README + screenshots make the project submission-ready
 
 ------------------------------------------------------------------------
 
